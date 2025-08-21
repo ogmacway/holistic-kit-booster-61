@@ -134,11 +134,11 @@ const Index = () => {
             </div>
             
             <div className="mt-6">
-              <Button 
+            <Button 
                 variant="cta" 
                 size="lg" 
                 className="text-sm sm:text-base md:text-lg lg:text-xl py-3 md:py-4 lg:py-6 px-6 md:px-8 bg-green-600 hover:bg-green-700 animate-scale-pulse"
-                onClick={() => window.open('https://go.pepperpay.com.br/icomf', '_blank')}
+                onClick={scrollToOffer}
               >
                 QUERO O KIT DE FERRAMENTAS PREMIUM
               </Button>
@@ -734,7 +734,6 @@ const Index = () => {
                     </div>
 
                     <Button 
-                      id="offer-section" 
                       variant="cta" 
                       size="lg" 
                       className="w-full text-sm sm:text-base md:text-lg lg:text-xl py-3 md:py-4 lg:py-6 px-4 bg-green-600 hover:bg-green-700 animate-scale-pulse"
