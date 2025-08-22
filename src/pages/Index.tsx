@@ -106,9 +106,9 @@ const Index = () => {
           </div>
 
           <div className="space-y-4 md:space-y-6">
-            <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl px-6 py-4 max-w-4xl mx-auto">
+            <div className="bg-white/30 backdrop-blur-sm border-2 border-white/50 rounded-xl px-6 py-4 max-w-4xl mx-auto shadow-lg">
               <p className="text-white text-base sm:text-lg md:text-xl leading-relaxed">
-                Nosso kit oferece mais de 500 ferramentas práticas, visuais e de rápida aplicação, criadas para valorizar seus atendimentos e transformar a experiência dos seus pacientes. Perfeito para terapeutas holísticos que desejam elevar seu trabalho a um novo nível.
+                Apenas uma prévia: tem oráculos, florais, mapas, planilhas, roteiros de meditação e muito mais… Quer ver o restante? Confira tudo que você vai receber!
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 sm:px-6 py-3 sm:py-4 max-w-2xl mx-auto">
@@ -128,8 +128,8 @@ const Index = () => {
               </p>
             </div>
             <div className="bg-white/15 backdrop-blur-sm border border-white/25 rounded-xl px-4 sm:px-6 py-2 sm:py-3 max-w-xl mx-auto mt-4">
-              <p className="text-white font-medium text-xs sm:text-sm md:text-base text-center">
-                Ferramenta atualizada {new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })} ({new Date().toLocaleDateString('pt-BR', { weekday: 'long' })})
+              <p className="text-white font-medium text-sm sm:text-base md:text-lg text-center">
+                Ferramentas atualizadas {new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })} ({new Date().toLocaleDateString('pt-BR', { weekday: 'long' })})
               </p>
             </div>
             
