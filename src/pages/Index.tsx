@@ -106,7 +106,7 @@ const Index = () => {
           </div>
 
           <div className="space-y-4 md:space-y-6">
-            <div className="bg-white/30 backdrop-blur-sm border-2 border-white/50 rounded-xl px-6 py-4 max-w-4xl mx-auto shadow-lg">
+            <div className="bg-white/30 backdrop-blur-sm border-2 border-gray-600/80 rounded-xl px-6 py-4 max-w-4xl mx-auto shadow-lg">
               <p className="text-white text-base sm:text-lg md:text-xl leading-relaxed">
                 Apenas uma prévia: tem oráculos, florais, mapas, planilhas, roteiros de meditação e muito mais… Quer ver o restante? Confira tudo que você vai receber!
               </p>
