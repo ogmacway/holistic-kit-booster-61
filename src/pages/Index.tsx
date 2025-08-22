@@ -730,7 +730,7 @@ const Index = () => {
                     
                     <div className="mb-4 md:mb-6">
                       <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-600 mb-1 md:mb-2"><span className="text-green-600 text-2xl sm:text-3xl md:text-4xl font-extrabold">4x R$ 6,96</span></p>
-                      <p className="text-base sm:text-lg md:text-xl text-wellness-dark">Ou R$ 24,90 à vista</p>
+                      <p className="text-base sm:text-lg md:text-xl text-wellness-dark">Ou <span className="text-green-600 font-bold text-sm sm:text-base md:text-lg">R$ 24,90</span> à vista</p>
                     </div>
 
                     <Button 
