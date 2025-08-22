@@ -97,12 +97,21 @@ const Index = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight">
             Kit Premium de <span className="text-wellness-accent">Ferramentas Holísticas</span>
           </h1>
-          <div className="mb-6 md:mb-8">
-            <img 
-              src={heroFeatures} 
-              alt="Ferramentas do Kit Holístico"
-              className="mx-auto max-w-xs sm:max-w-sm md:max-w-md w-full px-4"
-            />
+          <div className="mb-6 md:mb-8 relative">
+            <div className="relative mx-auto max-w-xs sm:max-w-sm md:max-w-md w-full px-4">
+              {/* Efeito de brilho de fundo */}
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-400/20 via-pink-400/20 to-purple-400/20 rounded-2xl blur-xl transform rotate-1"></div>
+              <div className="absolute inset-0 bg-gradient-to-l from-blue-400/15 via-purple-400/15 to-pink-400/15 rounded-2xl blur-lg transform -rotate-1"></div>
+              
+              {/* Imagem principal com bordas arredondadas e efeitos */}
+              <div className="relative bg-white/10 backdrop-blur-sm p-3 rounded-2xl border border-white/20 shadow-2xl">
+                <img 
+                  src={heroFeatures} 
+                  alt="Ferramentas do Kit Holístico"
+                  className="w-full rounded-xl shadow-lg ring-2 ring-white/30 ring-offset-2 ring-offset-transparent"
+                />
+              </div>
+            </div>
           </div>
 
           <div className="space-y-4 md:space-y-6">
