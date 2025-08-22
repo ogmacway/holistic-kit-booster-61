@@ -106,23 +106,23 @@ const Index = () => {
           </div>
 
           <div className="space-y-4 md:space-y-6">
-            <div className="bg-white/30 backdrop-blur-sm border-2 border-gray-600/80 rounded-xl px-6 py-4 max-w-4xl mx-auto shadow-lg">
+            <div className="bg-white/30 backdrop-blur-sm border-2 border-purple-400/90 shadow-lg shadow-purple-500/30 rounded-xl px-6 py-4 max-w-4xl mx-auto">
               <p className="text-white text-base sm:text-lg md:text-xl leading-relaxed">
                 Apenas uma prévia: tem oráculos, florais, mapas, planilhas, roteiros de meditação e muito mais… Quer ver o restante? Confira tudo que você vai receber!
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 sm:px-6 py-3 sm:py-4 max-w-2xl mx-auto">
               <p className="text-white font-semibold text-sm sm:text-base md:text-lg flex items-center justify-center gap-4 flex-wrap">
-                <span className="flex items-center gap-1">
-                  <CheckCircle className="w-4 h-4 text-wellness-accent" />
+                <span className="flex items-center gap-2">
+                  <CheckCircle className="w-6 h-6 text-green-400 drop-shadow-lg" />
                   Acesso Vitalício
                 </span>
-                <span className="flex items-center gap-1">
-                  <CheckCircle className="w-4 h-4 text-wellness-accent" />
+                <span className="flex items-center gap-2">
+                  <CheckCircle className="w-6 h-6 text-green-400 drop-shadow-lg" />
                   Suporte completo
                 </span>
-                <span className="flex items-center gap-1">
-                  <CheckCircle className="w-4 h-4 text-wellness-accent" />
+                <span className="flex items-center gap-2">
+                  <CheckCircle className="w-6 h-6 text-green-400 drop-shadow-lg" />
                   Pronto para usar imediatamente
                 </span>
               </p>
