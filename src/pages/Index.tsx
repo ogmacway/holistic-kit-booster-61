@@ -9,7 +9,7 @@ import FAQSection from '@/components/FAQSection';
 import { CheckCircle, Shield, Heart, ArrowDown, ChevronLeft, ChevronRight, ArrowDownCircle } from 'lucide-react';
 import heroImage from '@/assets/hero-wellness-kit.jpg';
 import testimonialImage from '@/assets/testimonial-therapist.jpg';
-import heroFeatures from '/lovable-uploads/f293f5d2-fee8-4596-8aca-92e97b7d7569.png';
+import heroFeatures from '/lovable-uploads/915517d8-3a59-4738-9c94-c53e0cf5dc6d.png';
 import useEmblaCarousel from 'embla-carousel-react';
 import AutoScroll from 'embla-carousel-auto-scroll';
 
@@ -718,7 +718,7 @@ const Index = () => {
                     <CardContent className="p-4 md:p-6 lg:p-8 text-center">
                       <div className="mb-4 md:mb-6">
                         <img 
-                          src="/lovable-uploads/2857348e-0a97-46db-a9ca-b191e90c3248.png" 
+                          src="/lovable-uploads/915517d8-3a59-4738-9c94-c53e0cf5dc6d.png" 
                           alt="Kit de Ferramentas Premium" 
                           className="w-full max-w-[200px] md:max-w-xs mx-auto rounded-lg shadow-md"
                         />
