@@ -6,7 +6,7 @@ import CountdownTimer from '@/components/CountdownTimer';
 import ToolIcon from '@/components/ToolIcon';
 import TestimonialCard from '@/components/TestimonialCard';
 import FAQSection from '@/components/FAQSection';
-import { CheckCircle, Shield, Heart, ArrowDown, ChevronLeft, ChevronRight, ArrowDownCircle } from 'lucide-react';
+import { CheckCircle, Shield, Heart, ArrowDown, ChevronLeft, ChevronRight, ArrowDownCircle, Flame } from 'lucide-react';
 import heroImage from '@/assets/hero-wellness-kit.jpg';
 import testimonialImage from '@/assets/testimonial-therapist.jpg';
 import heroFeatures from '/lovable-uploads/915517d8-3a59-4738-9c94-c53e0cf5dc6d.png';
@@ -653,10 +653,20 @@ const Index = () => {
           
           {/* Copy de urgência dentro da seção de depoimentos */}
           <div className="mt-8 max-w-3xl mx-auto">
-            <div className="bg-gradient-to-r from-orange-500 to-red-600 text-white p-4 md:p-6 rounded-xl shadow-lg animate-pulse">
-              <p className="text-lg sm:text-xl md:text-2xl font-bold text-center">
+            <div className="bg-gradient-to-r from-red-600 via-red-700 to-red-800 text-white p-4 md:p-6 rounded-xl shadow-2xl border-2 border-red-500 animate-pulse">
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <Flame className="w-6 h-6 md:w-8 md:h-8 text-orange-300 animate-bounce" />
+                <Flame className="w-8 h-8 md:w-10 md:h-10 text-yellow-300 animate-bounce delay-150" />
+                <Flame className="w-6 h-6 md:w-8 md:h-8 text-orange-300 animate-bounce delay-300" />
+              </div>
+              <p className="text-lg sm:text-xl md:text-2xl font-bold text-center leading-tight">
                 🔥OFERTA POR TEMPO LIMITADO! Adquira hoje e tenha acesso a todos os materiais, prontos para uso!🔥
               </p>
+              <div className="flex items-center justify-center gap-3 mt-2">
+                <Flame className="w-5 h-5 md:w-6 md:h-6 text-orange-400 animate-pulse" />
+                <Flame className="w-4 h-4 md:w-5 md:h-5 text-yellow-400 animate-pulse delay-75" />
+                <Flame className="w-5 h-5 md:w-6 md:h-6 text-orange-400 animate-pulse delay-150" />
+              </div>
             </div>
           </div>
         </div>
