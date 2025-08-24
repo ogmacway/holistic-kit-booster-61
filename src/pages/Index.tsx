@@ -662,11 +662,6 @@ const Index = () => {
               <p className="text-lg sm:text-xl md:text-2xl font-bold text-center leading-tight">
                 🔥OFERTA POR TEMPO LIMITADO! Adquira hoje e tenha acesso a todos os materiais, prontos para uso!🔥
               </p>
-              <div className="flex items-center justify-center gap-3 mt-2">
-                <Flame className="w-5 h-5 md:w-6 md:h-6 text-orange-400 animate-pulse" />
-                <Flame className="w-4 h-4 md:w-5 md:h-5 text-yellow-400 animate-pulse delay-75" />
-                <Flame className="w-5 h-5 md:w-6 md:h-6 text-orange-400 animate-pulse delay-150" />
-              </div>
             </div>
           </div>
         </div>
