@@ -106,7 +106,7 @@ const Index = () => {
                 {/* Carrossel de imagens */}
                 <div className="relative bg-white/10 backdrop-blur-sm p-3 rounded-2xl border border-white/20 shadow-2xl">
                   <div className="overflow-hidden rounded-xl">
-                    <div className="flex animate-[slide_6s_ease-in-out_infinite]">
+                    <div className="flex animate-[slide_28s_ease-in-out_infinite]">
                       {/* Imagem atual */}
                       <div className="w-full flex-shrink-0">
                         <img 
@@ -650,6 +650,15 @@ const Index = () => {
               <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
             </button>
           </div>
+          
+          {/* Copy de urgência dentro da seção de depoimentos */}
+          <div className="mt-8 max-w-3xl mx-auto">
+            <div className="bg-gradient-to-r from-orange-500 to-red-600 text-white p-4 md:p-6 rounded-xl shadow-lg animate-pulse">
+              <p className="text-lg sm:text-xl md:text-2xl font-bold text-center">
+                🔥OFERTA POR TEMPO LIMITADO! Adquira hoje e tenha acesso a todos os materiais, prontos para uso!🔥
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -761,8 +770,7 @@ const Index = () => {
                     </p>
                     
                     <div className="mb-4 md:mb-6">
-                      <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-green-600 mb-1 md:mb-2"><span className="text-green-600 text-3xl sm:text-4xl md:text-5xl font-extrabold">R$ 24,90</span> à vista</p>
-                      <p className="text-base sm:text-lg md:text-xl text-wellness-dark">Ou <span className="text-green-600 font-bold text-sm sm:text-base md:text-lg">4x R$ 6,96</span></p>
+                      <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-green-600 mb-1 md:mb-2 flex items-center justify-center gap-1"><span className="text-green-600 text-3xl sm:text-4xl md:text-5xl font-extrabold">R$ 24,90</span> <span className="text-lg sm:text-xl md:text-2xl font-bold">á vista</span> <span className="text-base sm:text-lg md:text-xl text-wellness-dark">ou <span className="text-green-600 font-bold text-sm sm:text-base md:text-lg">4x R$ 6,96</span></span></p>
                     </div>
 
                     <Button 
@@ -806,15 +814,6 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Copy de urgência após depoimentos */}
-      <section className="py-8 md:py-12 bg-red-600">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white py-4 px-6 rounded-lg shadow-lg animate-pulse">
-            🔥OFERTA POR TEMPO LIMITADO! Adquira hoje e tenha acesso a todos os materiais, prontos para uso!🔥
-          </p>
         </div>
       </section>
 
