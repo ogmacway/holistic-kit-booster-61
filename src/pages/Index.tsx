@@ -97,22 +97,45 @@ const Index = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight">
             Kit Premium de <span className="text-wellness-accent">Ferramentas Holísticas</span>
           </h1>
-          <div className="mb-6 md:mb-8 relative">
-            <div className="relative mx-auto max-w-xs sm:max-w-sm md:max-w-md w-full px-4">
-              {/* Efeito de brilho de fundo */}
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-400/20 via-pink-400/20 to-purple-400/20 rounded-2xl blur-xl transform rotate-1"></div>
-              <div className="absolute inset-0 bg-gradient-to-l from-blue-400/15 via-purple-400/15 to-pink-400/15 rounded-2xl blur-lg transform -rotate-1"></div>
-              
-              {/* Imagem principal com bordas arredondadas e efeitos */}
-              <div className="relative bg-white/10 backdrop-blur-sm p-3 rounded-2xl border border-white/20 shadow-2xl">
-                <img 
-                  src={heroFeatures} 
-                  alt="Ferramentas do Kit Holístico"
-                  className="w-full rounded-xl shadow-lg ring-2 ring-white/30 ring-offset-2 ring-offset-transparent"
-                />
+            <div className="mb-6 md:mb-8 relative">
+              <div className="relative mx-auto max-w-xs sm:max-w-sm md:max-w-md w-full px-4">
+                {/* Efeito de brilho de fundo */}
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-400/20 via-pink-400/20 to-purple-400/20 rounded-2xl blur-xl transform rotate-1"></div>
+                <div className="absolute inset-0 bg-gradient-to-l from-blue-400/15 via-purple-400/15 to-pink-400/15 rounded-2xl blur-lg transform -rotate-1"></div>
+                
+                {/* Carrossel de imagens */}
+                <div className="relative bg-white/10 backdrop-blur-sm p-3 rounded-2xl border border-white/20 shadow-2xl">
+                  <div className="overflow-hidden rounded-xl">
+                    <div className="flex animate-[slide_6s_ease-in-out_infinite]">
+                      {/* Imagem atual */}
+                      <div className="w-full flex-shrink-0">
+                        <img 
+                          src={heroFeatures} 
+                          alt="Ferramentas do Kit Holístico"
+                          className="w-full rounded-xl shadow-lg ring-2 ring-white/30 ring-offset-2 ring-offset-transparent"
+                        />
+                      </div>
+                      {/* Cards vazios para futuras imagens */}
+                      <div className="w-full flex-shrink-0">
+                        <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-xl shadow-lg ring-2 ring-white/30 ring-offset-2 ring-offset-transparent flex items-center justify-center">
+                          <span className="text-white/50 text-sm md:text-base">Imagem 2</span>
+                        </div>
+                      </div>
+                      <div className="w-full flex-shrink-0">
+                        <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-xl shadow-lg ring-2 ring-white/30 ring-offset-2 ring-offset-transparent flex items-center justify-center">
+                          <span className="text-white/50 text-sm md:text-base">Imagem 3</span>
+                        </div>
+                      </div>
+                      <div className="w-full flex-shrink-0">
+                        <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] bg-gradient-to-br from-pink-400/20 to-blue-400/20 rounded-xl shadow-lg ring-2 ring-white/30 ring-offset-2 ring-offset-transparent flex items-center justify-center">
+                          <span className="text-white/50 text-sm md:text-base">Imagem 4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
           <div className="space-y-4 md:space-y-6">
             <div className="bg-white/30 backdrop-blur-sm border-2 border-purple-400/90 shadow-lg shadow-purple-500/30 rounded-xl px-6 py-4 max-w-4xl mx-auto">
@@ -197,6 +220,31 @@ const Index = () => {
               <CardContent className="p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-6 items-center">
                 <div className="flex-shrink-0 w-full md:w-48">
                   <img 
+                    src="/lovable-uploads/3e706aae-c6fb-4097-8cd2-5f214d58bd22.png" 
+                    alt="Pacote Reiki Profissional"
+                    className="w-full h-auto rounded-lg"
+                  />
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <div className="flex items-start gap-2 mb-3">
+                    <CheckCircle className="w-5 h-5 text-wellness-primary mt-0.5 flex-shrink-0" />
+                    <div>
+                       <h4 className="font-bold text-wellness-dark text-lg md:text-xl mb-2">
+                         Pacote Reiki Profissional – Formulários, Técnicas e Scripts de Pós-Sessão – <span className="text-red-600 text-xl md:text-2xl font-extrabold">R$ 47</span>
+                       </h4>
+                      <p className="text-muted-foreground text-sm md:text-base">
+                        Formulários, mapas de posição e scripts prontos para melhorar a experiência pós-sessão.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-wellness-light shadow-card-wellness mb-8 md:mb-12">
+              <CardContent className="p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-6 items-center">
+                <div className="flex-shrink-0 w-full md:w-48">
+                  <img 
                     src="/lovable-uploads/72d47a4e-95d6-40f2-9b0f-7f3efa2f1668.png" 
                     alt="Aromaterapia Terapêutica"
                     className="w-full h-auto rounded-lg"
@@ -261,31 +309,6 @@ const Index = () => {
                        </h4>
                       <p className="text-muted-foreground text-sm md:text-base">
                         Protocolos prontos para indicar o floral ideal conforme o estado emocional do paciente.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-wellness-light shadow-card-wellness mb-8 md:mb-12">
-              <CardContent className="p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-6 items-center">
-                <div className="flex-shrink-0 w-full md:w-48">
-                  <img 
-                    src="/lovable-uploads/3e706aae-c6fb-4097-8cd2-5f214d58bd22.png" 
-                    alt="Pacote Reiki Profissional"
-                    className="w-full h-auto rounded-lg"
-                  />
-                </div>
-                <div className="flex-1 text-center md:text-left">
-                  <div className="flex items-start gap-2 mb-3">
-                    <CheckCircle className="w-5 h-5 text-wellness-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                       <h4 className="font-bold text-wellness-dark text-lg md:text-xl mb-2">
-                         Pacote Reiki Profissional – Formulários, Técnicas e Scripts de Pós-Sessão – <span className="text-red-600 text-xl md:text-2xl font-extrabold">R$ 47</span>
-                       </h4>
-                      <p className="text-muted-foreground text-sm md:text-base">
-                        Formulários, mapas de posição e scripts prontos para melhorar a experiência pós-sessão.
                       </p>
                     </div>
                   </div>
@@ -738,8 +761,8 @@ const Index = () => {
                     </p>
                     
                     <div className="mb-4 md:mb-6">
-                      <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-600 mb-1 md:mb-2"><span className="text-green-600 text-2xl sm:text-3xl md:text-4xl font-extrabold">4x R$ 6,96</span></p>
-                      <p className="text-base sm:text-lg md:text-xl text-wellness-dark">Ou <span className="text-green-600 font-bold text-sm sm:text-base md:text-lg">R$ 24,90</span> à vista</p>
+                      <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-green-600 mb-1 md:mb-2"><span className="text-green-600 text-3xl sm:text-4xl md:text-5xl font-extrabold">R$ 24,90</span> à vista</p>
+                      <p className="text-base sm:text-lg md:text-xl text-wellness-dark">Ou <span className="text-green-600 font-bold text-sm sm:text-base md:text-lg">4x R$ 6,96</span></p>
                     </div>
 
                     <Button 
@@ -756,12 +779,6 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Copy de urgência */}
-            <div className="mt-8 md:mt-12 text-center">
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white bg-red-600 py-4 px-6 rounded-lg shadow-lg animate-pulse">
-                🔥 Oferta por Tempo Limitado! Adquira hoje e tenha acesso a todos os materiais, prontos para uso! 🔥
-              </p>
-            </div>
             
             {/* Card de Garantia */}
             <div className="mt-6 md:mt-8 max-w-4xl mx-auto">
@@ -789,6 +806,15 @@ const Index = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Copy de urgência após depoimentos */}
+      <section className="py-8 md:py-12 bg-red-600">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white py-4 px-6 rounded-lg shadow-lg animate-pulse">
+            🔥OFERTA POR TEMPO LIMITADO! Adquira hoje e tenha acesso a todos os materiais, prontos para uso!🔥
+          </p>
         </div>
       </section>
 
